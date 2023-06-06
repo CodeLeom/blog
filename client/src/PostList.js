@@ -19,9 +19,12 @@ function PostList() {
 
     const renderedPosts = Object.values(posts).map(post => {
         return (
-            <div className='card' key={post.id}>
-                <div className='card-body'>
-                    <h3> {post.title} </h3>
+            <div className='max-w-sm rounded overflow-hidden shadow-lg' key={post.id}>
+                <div className='px-6 py-4'>
+                    <div className='font-bold text-xl mb-2'>
+                        <h3> {post.title} </h3>
+                    </div>
+                    <p className='text-gray-700 text-base'>lorem ipsum dolor comment Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         )

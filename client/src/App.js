@@ -7,7 +7,7 @@ function App() {
         <h1 className="text-gray-700 text-sm font-bold text-center">Create Post</h1>
         <PostCreate />
         <hr />
-        <h2>Posts</h2>
+        <h2 className="mt-5 text-gray-700 text-sm font-bold text-center">Posts</h2>
         <PostList />
     </div>
   );

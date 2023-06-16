@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import CreateComment from './CreateComment'
+import ListComment from './ListComment'
 import axios from 'axios'
 
 function PostList() {
@@ -24,9 +25,11 @@ function PostList() {
                 <div className='px-6 py-4'>
                     <div className='font-bold text-xl mb-2'>
                         <h3> {post.title} </h3>
-                        <CreateComment postId={post.id} />
                     </div>
-                    <p className='text-gray-700 text-base'>lorem ipsum dolor comment Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p className='text-gray-700 text-base list-disc'>
+                        <ListComment postId={post.id} />
+                    </p>
+                    <CreateComment postId={post.id} />
                 </div>
             </div>
         )

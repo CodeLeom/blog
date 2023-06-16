@@ -1,11 +1,11 @@
-import PostCreate from "./PostCreate";
+import CreatePost from "./CreatePost";
 import PostList from "./PostList";
 
 function App() {
   return (
     <div className="w-full max-w-xs my-9">
         <h1 className="text-gray-700 text-sm font-bold text-center">Create Post</h1>
-        <PostCreate />
+        <CreatePost />
         <hr />
         <h2 className="mt-5 text-gray-700 text-sm font-bold text-center">Posts</h2>
         <PostList />

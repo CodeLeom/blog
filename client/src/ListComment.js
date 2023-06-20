@@ -19,7 +19,7 @@ function ListComment({postId}) {
         return <li key={comment.id}>{comment.content}</li>
     })
   return (
-    <ul className='list-disc'>
+    <ul className='list-disc px-3'>
         {renderedComments}
     </ul>
   )

@@ -14,8 +14,8 @@
 
 ### Ports
 
-> Client runs on Port 3000
-> Posts runs on Port 4001
-> Comments runs on Port 4002
-> Query runs on Port 4003
-> Event Bus runs on Port 4005 
+> Client runs on Port 3000; -
+> Posts runs on Port 4001; -
+> Comments runs on Port 4002; -
+> Query runs on Port 4003; -
+> Event Bus runs on Port 4005; -

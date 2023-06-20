@@ -27,6 +27,13 @@ app.post('/posts', (req, res) => {
     res.status(201).send(posts[id])
 })
 
+
+app.post('/events', (req, res) => {
+    console.log('Event Received', req.body.type)
+
+    res.send({})
+})
+
 app.listen(4001, () => {
     console.log('App Listening on Port 4001')
 })

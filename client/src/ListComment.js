@@ -1,19 +1,8 @@
-import React, {useState, useEffect} from 'react'
-import axios from 'axios'
+import React from 'react'
 
-
-function ListComment({postId}) {
-    const [comments, setComments] = useState([])
-
-    const fetchData = async () => {
-        const res = await axios.get(`http://localhost:4002/posts/${postId}/comments`)
-
-        setComments(res.data)
-    }
-
-    useEffect(() => {
-        fetchData()
-    }, [])
+function ListComment({ comments }) {
+   //The state is no loger needed
+   //as we are now getting request directly from the query service
 
     const renderedComments = comments.map(comment => {
         return <li key={comment.id}>{comment.content}</li>

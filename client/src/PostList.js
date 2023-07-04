@@ -10,7 +10,6 @@ function PostList() {
     //fetch the available posts from the Query endpoint
     const fetchPosts = async () => {
         const res = await axios.get('http://localhost:4003/posts')
-        console.log(res.data)
         setPosts(res.data)
     }
 
@@ -23,7 +22,7 @@ function PostList() {
         return (
             <div className="mx-3 mb-2 p-4 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
                     <h2 className="text-lg mb-2">{post.title}</h2>
-                        <ListComment postId={post.id} className="text-gray-700 text-base hover:text-gray-900 transition-all duration-200" />
+                        <ListComment comments={post.comments} className="text-gray-700 text-base hover:text-gray-900 transition-all duration-200" />
                         <CreateComment postId={post.id} />
                 </div>
         )

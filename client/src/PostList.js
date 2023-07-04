@@ -7,10 +7,10 @@ function PostList() {
 
     const [posts, setPosts] = useState({})
 
-    //fetch the available posts from the Post endpoint
+    //fetch the available posts from the Query endpoint
     const fetchPosts = async () => {
-        const res = await axios.get('http://localhost:4001/posts')
-
+        const res = await axios.get('http://localhost:4003/posts')
+        console.log(res.data)
         setPosts(res.data)
     }
 

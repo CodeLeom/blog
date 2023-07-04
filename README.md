@@ -5,12 +5,12 @@
 ### Folder Structure Details
 
 1. Blog is the root folder of the project
-2. Client contains the UI and interactable interface
+2. Client contains the UI and interactable interface of the application
 3. Comment contains the comment service
 4. Event-bus contains the bridge between all services, it sends all the communication from different services to all.
-5. Moderation
+5. Moderation: this is an added service for comment moderation. To flag a particular comment contain un acceptable words.
 6. Posts contain the post service
-7. Query
+7. Query service make a request from all the existing service and route it to our application (listens to every actions made on other service and dispath it to the application)
 
 ### Ports
 

@@ -18,4 +18,5 @@
 > Posts runs on Port 4001; -
 > Comments runs on Port 4002; -
 > Query runs on Port 4003; -
+> Moderation runs on Port 4004; -
 > Event Bus runs on Port 4005; -

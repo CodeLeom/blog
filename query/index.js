@@ -9,14 +9,8 @@ app.use(cors())
 
 const posts = {} //get all the post into an object
 
-app.get('/posts', (req, res) => {
-    res.send(posts)
-})
-
-//get all the events from post and comment
-app.post('/events', (req, res) => {
-    const {type, data} = req.body
-
+// event handler
+const handleEvent = (type, data) => {
     if(type === 'PostCreated'){
         const {id, title} = data
 
@@ -42,7 +36,18 @@ app.post('/events', (req, res) => {
         comment.status = status
         comment.content = content
     }
-    console.log(posts)
+}
+
+app.get('/posts', (req, res) => {
+    res.send(posts)
+})
+
+//get all the events from post and comment
+app.post('/events', (req, res) => {
+    const {type, data} = req.body
+
+    handleEvent(type, data)
+
     res.send({})
 })
 

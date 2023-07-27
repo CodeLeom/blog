@@ -24,7 +24,19 @@
 
 ### CommentModerated Properties
 
-> Anytime a comment is moderated from the `moderation service` an event is emmited to the `comment service`, below is the properties included
+> Anytime a comment is moderated from the `Moderation service` an event is emmited to the `Comment service`, below is the properties included
+
+Name     | Data Type
+-------- | ---------
+id       | string
+content  | string
+postId   | string
+status   | 'approved' or 'rejected'
+
+
+### CommentUpdated Properties
+
+> Anytime a comment attribute is updated in the `Comment service` an event is emmited to the `Query service`, below is the properties included
 
 Name     | Data Type
 -------- | ---------

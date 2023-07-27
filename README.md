@@ -1,3 +1,7 @@
+# Note: Don't use some part of this code in a production environment.
+
+> This code is for my learning about microservice
+
 ## A React Blog on showcasing how microservice works
 
 >After cloning this project, cd into each folder and run `npm install`. The command will install all the dependencies, and then, run `npm start`, to start each service. `cd` into the `client` folder and run `npm start` to run the App UI where you can interact with the project.

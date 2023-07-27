@@ -22,9 +22,9 @@
 > Event Bus runs on Port 4005; -
 
 
-### Properties
+### CommentModerated Properties
 
-> Anytime a comment event is emmited from the `moderation service` to the `comment service` & vis-a-vis, below is the properties included
+> Anytime a comment is moderated from the `moderation service` an event is emmited to the `comment service`, below is the properties included
 
 Name     | Data Type
 -------- | ---------

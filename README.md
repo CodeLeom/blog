@@ -20,3 +20,19 @@
 > Query runs on Port 4003; -
 > Moderation runs on Port 4004; -
 > Event Bus runs on Port 4005; -
+
+
+### Properties
+
+> Anytime a comment event is emmited from the `moderation service` to the `comment service` & vis-a-vis, below is the properties included
+
+Name     | Data Type
+-------- | ---------
+id       | string
+content  | string
+postId   | string
+status   | 'approved' or 'rejected'
+
+
+
+
